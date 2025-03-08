@@ -1,0 +1,37 @@
+﻿---
+ID: "5ca786b9-03ea-4b8e-8564-018f13efa116"
+Parent: "d13f730a-b2ad-4df7-8552-8307a554f72b"
+Template: "d13f730a-b2ad-4df7-8552-8307a554f72b"
+Path: /sitecore/templates/Project/hackathon/Page Design Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {D13F730A-B2AD-4DF7-8552-8307A554F72B}
+    {F82D20A5-2FEE-4F56-9D4B-6596287698C8}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250308T021735Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d15b99d4-159d-4b4f-aaf2-276dba06ed19"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250308T021743Z

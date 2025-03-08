@@ -1,0 +1,32 @@
+﻿---
+ID: "0989c3ff-fd4f-4854-9daa-8c8dfedd3b1e"
+Parent: "2d1393df-babe-407f-9d28-7e1f23412900"
+Template: "4378d481-40d0-4f3a-a336-a672f97cb83d"
+Path: "/sitecore/content/hackathon/stack-overflowed/Home/about-us"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250308T040240Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: "about-us"
+    - ID: "54dd2e63-b56a-41f5-9d41-e665f33314e3"
+      Hint: Content
+      Value: "Sitecore Hackathon Team - Stack Overflowed"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "aa31320e-396d-4dab-8390-85d26e12e970"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d73f1ea7-b849-4d52-8550-0f00f524aade"
+      Hint: Title
+      Value: About Us
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250308T040345Z

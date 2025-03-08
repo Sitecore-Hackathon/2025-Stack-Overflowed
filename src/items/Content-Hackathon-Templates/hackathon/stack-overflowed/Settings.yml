@@ -1,0 +1,67 @@
+﻿---
+ID: "7855735f-e21b-4df7-bd96-e7a5c1cc1bd4"
+Parent: "fe2564b8-defb-40aa-baed-197d98706efe"
+Template: "fc857561-c186-456a-8a7b-b0b0f8a14070"
+Path: "/sitecore/content/hackathon/stack-overflowed/Settings"
+BranchID: "b90549b5-c997-4d6b-b102-c9ab82528974"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {11F57D7B-CBB2-4647-B98C-71457564BA4F}
+    {0D792404-79AA-483D-BB0C-50785F2E295B}
+    {F86FE270-00A4-492F-BFAF-5BF27E40CE13}
+    {C2DC4690-AF44-48C7-BB21-90D1AD246732}
+    {E7F93DDC-E6FD-4A17-BF3C-959C82D6FB8D}
+    {DC66D5DA-3216-48E6-AE78-BAC8445B6A46}
+    {70461699-48E4-45FA-B74B-0CCE849FCA6A}
+    {20EF5E69-B366-4E9E-960B-E451B24DBD46}
+    {5C76AD53-96CD-4B96-9690-DD9AF2650171}
+    {44936C95-BCA9-4FB3-9D98-2066A5FBBB4D}
+    {5A6BF1D1-836B-425A-A6E6-32CEAA8FF3A5}
+    {B14BAB5B-8965-466B-886B-1F93175BCAB3}
+    {041C1F9F-99A4-4EE6-8308-985499F91032}
+- ID: "ad84cc6b-32ef-49d8-9326-916976cb2520"
+  Hint: Grid Mapping
+  Value: "%7bFE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3%7d%3d%257B2472CEE0-FBB4-474B-8D1C-D8517199CC08%257D"
+- ID: "af332c24-fe17-41e7-8caf-8e64c588fe72"
+  Hint: EditingTheme
+  Value: "{9306AF65-A48D-4BA8-879A-878433C1CEA8}"
+- ID: "beeede03-ab13-4558-96f9-c3e8957b46f8"
+  Hint: Themes
+  Value: "{40B0654C-D212-4025-8BA9-119906768EF6}"
+- ID: "e81e1f9e-8b87-495b-9cb7-84a2a23133be"
+  Hint: MediaLibrary
+  Value: "{048E16DB-EFAA-49C1-B089-E57F1E03BD1E}"
+- ID: "e8881464-38af-4655-be4a-ee10586578a2"
+  Hint: Templates
+  Value: "{0663534B-347D-46E7-AC0B-8A6C72E092F4}"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{3E739E69-859C-4694-8D14-2BA6CA779CC6}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250308T021910Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2abf66b4-f778-4d93-89e3-5a74315e578f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250308T022118Z

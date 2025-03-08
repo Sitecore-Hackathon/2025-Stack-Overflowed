@@ -1,0 +1,32 @@
+﻿---
+ID: "78005104-f6be-4cc8-8127-d2abec29aa2e"
+Parent: "7855735f-e21b-4df7-bd96-e7a5c1cc1bd4"
+Template: "651bcad2-f32d-4cb3-9bd4-db9b895382bf"
+Path: "/sitecore/content/hackathon/stack-overflowed/Settings/Sitemap"
+BranchID: "f6b21a0c-6afa-48bf-ba6b-4521204ecf40"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{14607F1F-A9BB-4849-A32C-943E57903AE5}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250308T021931Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0ac209a2-4fe5-4913-8498-620239ec949c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250308T021931Z

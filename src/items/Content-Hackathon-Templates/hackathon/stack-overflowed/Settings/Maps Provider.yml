@@ -1,0 +1,32 @@
+﻿---
+ID: "6dbcdd40-086e-4087-9d2c-3c2ac08c0d6a"
+Parent: "7855735f-e21b-4df7-bd96-e7a5c1cc1bd4"
+Template: "70461699-48e4-45fa-b74b-0cce849fca6a"
+Path: "/sitecore/content/hackathon/stack-overflowed/Settings/Maps Provider"
+BranchID: "a1e387d2-7ec7-4b22-82b0-fb6046a7a770"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{B15D7313-EF9D-4807-AC5E-27366C81C833}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250308T022002Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a4e3b4c7-3f2f-4a3a-9f2c-8394f0163982"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250308T022002Z

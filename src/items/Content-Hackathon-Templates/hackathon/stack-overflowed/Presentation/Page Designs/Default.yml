@@ -1,0 +1,35 @@
+﻿---
+ID: "73550247-eb46-4487-a07e-7019c6fb0471"
+Parent: "41082403-4f33-4c72-a499-0c087162b4c8"
+Template: "f82d20a5-2fee-4f56-9d4b-6596287698c8"
+Path: "/sitecore/content/hackathon/stack-overflowed/Presentation/Page Designs/Default"
+SharedFields:
+- ID: "0966b999-0d0e-4278-acc9-9da69d461fe6"
+  Hint: PartialDesigns
+  Value: "{A2D5E30E-B79C-41BC-8756-A5ABF11C8A31}|{B17D8CF5-B9E9-438D-80DD-FEA1E07EDCA3}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250308T022119Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "96f0c4c1-8605-4679-a6ef-809dfe328371"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250308T022120Z

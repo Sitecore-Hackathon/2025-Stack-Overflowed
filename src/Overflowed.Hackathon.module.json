@@ -1,0 +1,19 @@
+{
+"namespace": "Hackathon",
+"items": {
+  "includes": [
+  {
+	  "name": "Project-Hackathon-Templates",
+      "path": "/sitecore/templates/Project/hackathon"
+  },
+  {
+	  "name": "Media-Hackathon-Templates",
+      "path": "/sitecore/media library/Project/hackathon"
+  },
+  {
+	  "name": "Content-Hackathon-Templates",
+      "path": "/sitecore/content/hackathon"
+  }
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+﻿---
+ID: "dcd1d8f9-c072-465c-aae2-3195334df575"
+Parent: "7855735f-e21b-4df7-bd96-e7a5c1cc1bd4"
+Template: "35abcb7f-dd86-483d-abe1-41c93c3aa7d9"
+Path: "/sitecore/content/hackathon/stack-overflowed/Settings/HTML Snippets"
+BranchID: "79e9e87f-2cc7-4bb9-bedf-a5ff9eb7e205"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{31C0A9F5-AFF5-47DF-9192-FC7423A32E2C}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250308T022002Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "068d9e7f-03e8-4906-b954-324809b607b7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250308T022002Z
