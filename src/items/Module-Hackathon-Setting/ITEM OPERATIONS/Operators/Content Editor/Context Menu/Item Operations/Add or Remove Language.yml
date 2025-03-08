@@ -1,0 +1,180 @@
+﻿---
+ID: "3bd31477-2e2c-485f-8f8e-6374d5ba2c43"
+Parent: "1adb5e9f-c2a4-4da5-be26-18fdd466ce2e"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/ITEM OPERATIONS/Operators/Content Editor/Context Menu/Item Operations/Add or Remove Language
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/modem_earth.png
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    $radioSelector = 1
+    $radioOptions = [ordered]@{
+        "Add Language Version" = 0
+        "Remove Language Versions" = 1
+    }
+    $props = @{
+        Parameters  = @(
+            @{
+                Name    = "radioSelector"
+                Title   = "Please select the operation you want to perform"
+                Editor  = "radio"
+                Options = $radioOptions
+                Tooltip = "Select an option"
+            }
+        )
+        Title       = "ADD Language Version / Remove Language Version"
+        Description = "This tool will either ADD Language Version or Remove Language Version"
+        Width       = 550
+        Height      = 300
+        ShowHints   = $true
+        Icon        = [regex]::Replace($PSScript.Appearance.Icon, "Office", "OfficeWhite", [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+    }
+    $result = Read-Variable @props
+    
+    if ($result -eq "cancel") {
+        exit
+    }
+    
+    if($radioSelector -eq "0"){
+        
+    $sourceLanguageSelector = Get-Item -Path "master:/sitecore/system/Languages"
+    $destinationLanguageSelector = Get-Item -Path "master:/sitecore/system/Languages"
+     
+    $dialogParams = @{
+        Title = "Add New Language"
+        Description = "Select a language to add to your Sitecore instance. This will enable content creation and management in the chosen language."
+        OkButtonName = "Execute"
+        CancelButtonName = "Close"
+        ShowHints = $true
+        Parameters = @(
+            @{
+                Name = "sourceLanguageSelector"
+                Title = "Source Language Selector"
+                Root = "/sitecore/system/Languages/"
+                Tooltip = "Select the Source Language"
+            }
+             @{
+                Name = "destinationLanguageSelector"
+                Title = "Destination Language Selector"
+                Root = "/sitecore/system/Languages/"
+                Tooltip = "Select the Destination Language"
+            }
+        )
+    }
+     
+    $dialogResult = Read-Variable @dialogParams
+    
+    #write-host  $sourceLanguageSelector.Name $destinationLanguageSelector.Name
+    
+    Get-ChildItem -Path "master:" -ID $SitecoreContextItem.ID -Recurse -WithParent |
+      ForEach-Object { Add-ItemLanguage $_ -Language $sourceLanguageSelector.Name -TargetLanguage $destinationLanguageSelector.Name -IfExist OverwriteLatest  -IgnoredFields "" }
+    }
+    
+    if($radioSelector -eq "1"){
+        $baseItem = Get-Item -Path "master:" -ID $SitecoreContextItem.ID
+    
+    $languagesOptions = [ordered]@{}
+    foreach ($lang in $baseItem.Versions.GetVersions($true)) {
+        Write-Host  $lang.language.Name
+        $languagesOptions += [ordered]@{
+            $lang.language.Name = $lang.language.Name
+        } 
+    }
+    
+    $radioSelector = 1
+    $radioOptions = [ordered]@{
+        "Dont Include Subitems" = 0
+        "Include Subitems"      = 1
+    }
+    
+    $props = @{
+        Parameters  = @(
+           
+            @{
+                Name    = "checkListSelector"
+                Title   = "Select the Languages for which you want to remove the versions"
+                Editor  = "checklist"
+                Options = $languagesOptions
+                Tooltip = "Select one or more options"
+            }
+            @{
+                Name    = "radioSelector"
+                Title   = "Do you wish to Include Subitems"
+                Editor  = "radio"
+                Options = $radioOptions
+                Tooltip = "Select an option"
+            }
+        )
+        Title       = "Remove Language"
+        Description = "Removing this language will prevent content from being created or managed in it. This action may impact existing items associated with this language."
+        Width       = 550
+        Height      = 300
+        ShowHints   = $true
+        Icon        = [regex]::Replace($PSScript.Appearance.Icon, "Office", "OfficeWhite", [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+    }
+    
+    $result = Read-Variable @props
+    
+    if ($result -eq "cancel") {
+        exit
+    }
+    
+    Write-Host $root.Name
+    Write-Host $radioSelector   $checkListSelector
+    if ($radioSelector -eq "1") {
+        $items = Get-childItem -Path $baseItem.Paths.Path -Recurse -WithParent
+        foreach ($item in $items) {
+            foreach ($version in $item.Versions.GetVersions($true)) {
+                foreach ($lang in $checkListSelector) {
+                    if ($version.language.Name -eq $lang) {
+                        Remove-Itemversion $version
+                        Write-Host $version.Name - $version.language
+                    }
+                }
+    
+            }
+        }
+    }
+    else {
+        foreach ($version in $baseItem.Versions.GetVersions($true)) {
+            foreach ($lang in $checkListSelector) {
+                if ($version.language -eq $lang) {
+                    Remove-Itemversion $version
+                    Write-Host $version.Name - $version.language
+                    break
+                }
+            }
+        }
+    }
+    
+    }
+    
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250308T055319Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\debtanu.b@horizontal.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\debtanu.b@horizontal.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bae21924-09bf-4a29-9990-25022ce92447"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250308T063836Z

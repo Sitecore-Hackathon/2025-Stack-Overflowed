@@ -13,6 +13,10 @@
   {
 	  "name": "Content-Hackathon-Templates",
       "path": "/sitecore/content/hackathon"
+  },
+  {
+	  "name": "Module-Hackathon-Setting",
+      "path": "/sitecore/system/Modules/PowerShell/Script Library/ITEM OPERATIONS"
   }
   ]
  }

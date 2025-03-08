@@ -1,0 +1,58 @@
+﻿---
+ID: "1adb5e9f-c2a4-4da5-be26-18fdd466ce2e"
+Parent: "e4d44726-f9c2-43bf-9330-beae9753e875"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/ITEM OPERATIONS/Operators/Content Editor/Context Menu/Item Operations
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/objects.png
+- ID: "613d128b-7bf2-40f4-84cb-6717408f9806"
+  Hint: ShowRule
+  Value: |
+    <ruleset>
+      <rule
+        uid="{8E73415C-E25C-4753-88E4-B2C9449FA593}">
+        <conditions>
+          <or
+            uid="5E5BD23E268E4ED7BC1273F5AE488F5F">
+            <condition
+              id="{4B889F07-94D4-4371-B522-9FFE8AF0BE12}"
+              uid="FCBAC5F526464B348B8B01DF24CD9673"
+              operatorid="{FDD7C6B1-622A-4362-9CFF-DDE9866C68EA}"
+              value="/sitecore/content/" />
+            <condition
+              id="{4B889F07-94D4-4371-B522-9FFE8AF0BE12}"
+              uid="E8AC320A61CE415CB20DC909F248DAD0"
+              operatorid="{FDD7C6B1-622A-4362-9CFF-DDE9866C68EA}"
+              value="/sitecore/media library/" />
+          </or>
+        </conditions>
+      </rule>
+    </ruleset>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250308T055258Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\debtanu.b@horizontal.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\debtanu.b@horizontal.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ad47bcad-c59d-48d2-81bb-9985cb93c789"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\debtanu.b@horizontal.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250308T055850Z
